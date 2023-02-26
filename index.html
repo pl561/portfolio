@@ -37,7 +37,7 @@
 						<ul class="links">
 							<li class="active"><a href="index.html">Projects</a></li>
 							<li><a href="generic.html">Tech Garage</a></li>
-							<li><a href="aboutme.html">About Me</a></li>
+							<li><a href="about.html">About</a></li>
 						</ul>
 						<ul class="icons">
 							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
@@ -52,9 +52,8 @@
 					<div id="main">
 
 						<!-- Featured Post -->
-							<article class="post featured">
+							<!-- <article class="post featured">
 								<header class="major">
-									<!-- <span class="date">April 25, 2017</span> -->
 									<h2><a href="#">Human Pose Estimation</a></h2>
 									<p>Research and Development on Human Pose Estimation</p>
 								</header>
@@ -63,14 +62,25 @@
 								<ul class="actions special">
 									<li><a href="projects/pose.html" class="button large">Full Story</a></li>
 								</ul>
-							</article>
+							</article> -->
 
 						<!-- Posts -->
 							<section class="posts">
 								<article>
 									<header>
-										<!-- <span class="date">April 24, 2017</span> -->
-										<h2><a href="#">Human And Object Detection</a></h2>
+										<h2><a href="#">Human Pose Estimation</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pose1.gif" alt="credit to vitae-transformer/vitpose" /></a>
+									<p>AI Computer Vision project from 0 to 1: from data to model deployment on edge devices and platforms.</p>
+                                    <p> Applications of
+                                        Human Pose Estimation to fitness action recognition and human spine curvature estimation for healthcare.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2><a href="#">Object Detection</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
@@ -80,50 +90,57 @@
 								</article>
 								<article>
 									<header>
-										<!-- <span class="date">April 22, 2017</span> -->
-										<h2><a href="#">Human and Object Segmentation</a></h2>
+										<h2><a href="#">
+                                            Human Segmentation
+                                        </a>
+                                    </h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<p>
+                                        Semantic segmentation of the human body. Stability improvements of Human Pose Estimation methods with segmentation masks.
+                                    </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">Full Story</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<!-- <span class="date">April 18, 2017</span> -->
-										<h2><a href="#">Model inference as a microservice</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 14, 2017</span> -->
 										<h2><a href="#">Model conversion</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<p>
+                                        Study of different model formats such as ONNX, Caffe, TFLite with a particular focus on model transcoding for edge devices (Khadas AMLOGIC VIM3, Horizon x3m). Transcoding tools: Tengine, Acuity Toolkit, Horizon OpenExplorer.
+                                    </p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>								<article>
+									<header>
+										<h2><a href="#">Model inference as a microservice</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+									<p>
+                                        Deployment of an ONNX model inference server using FastAPI inside a Docker container.
+                                    </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">Full Story</a></li>
 									</ul>
 								</article>
+
 								<article>
 									<header>
 										<h2><a href="#">Model Acceleration and Compression</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<p>
+                                        Deployment of deep neural networks on edge devices and platforms under performance constraints. General accuracy and inference speed must be both improved. Some of the state-of-the-art methods are network quantization, network reparamatrization, network factorization, pruning, distillation.
+                                    </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">Full Story</a></li>
 									</ul>
 								</article>
 								<!-- <article>
 									<header>
-										<span class="date">April 7, 2017</span>
 										<h2><a href="#">Augue lorem<br />
 										primis vestibulum</a></h2>
 									</header>
@@ -136,19 +153,19 @@
 							</section>
 
 						<!-- Footer -->
-							<footer>
-								<div class="pagination">
+							<!-- <footer> -->
+								<!-- <div class="pagination"> -->
 									<!--<a href="#" class="previous">Prev</a>-->
-									<a href="#" class="page active">1</a>
+									<!-- <a href="#" class="page active">1</a> -->
 									<!-- <a href="#" class="page">2</a> -->
 									<!-- <a href="#" class="page">3</a>
 									<span class="extra">&hellip;</span>
 									<a href="#" class="page">8</a>
 									<a href="#" class="page">9</a>
 									<a href="#" class="page">10</a> -->
-									<a href="#" class="next">Next</a>
-								</div>
-							</footer>
+									<!-- <a href="#" class="next">Next</a> -->
+								<!-- </div> -->
+							<!-- </footer> -->
 
 					</div>
 
