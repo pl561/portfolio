@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Model Compression and Acceleration</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="#" class="logo">Model Compression and Acceleration</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="model-compression-index.html">Model Compression and Acceleration</a></li>
+							<li><a href="techgarage.html">Tech Garage Blog</a></li>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									
+								</header>
+								
+								
+
+								<article>
+									<header>
+										<h2><a href="#">Several ways to compress and accelerate neural networks</a></h2>
+									</header>
+
+									
+
+									<p>
+										Deep learning models have achieved state-of-the-art performance on a wide range of computer vision tasks, but their large size and high computational cost can make them difficult to deploy in real-world applications. Model inference, which refers to the process of using a trained model to make predictions on new data, can be particularly computationally intensive. In this post, I will discuss some techniques for accelerating model inference and reducing its computational cost.
+									</p>
+
+									<p>
+										<ul>
+											<li>
+												Quantization: Quantization is a technique for reducing the precision of the weights and activations in a model. By converting the parameters from floating-point to fixed-point representation, quantization can significantly reduce the memory footprint of a model and speed up its inference time. There are several types of quantization, including uniform quantization, non-uniform quantization, and dynamic quantization.
+											</li>
+											<li>
+												Pruning: Pruning is a technique for reducing the size of a model by removing unimportant weights or neurons. By removing redundant parameters, pruning can reduce the memory footprint of a model and speed up its inference time. There are several types of pruning, including weight pruning, neuron pruning, and filter pruning.
+											</li>
+											<li>
+												Knowledge distillation: Knowledge distillation is a technique for compressing a large, complex model into a smaller, simpler one. The idea is to train the smaller model to mimic the behavior of the larger model, using its predictions as a guide. By transferring the knowledge from the larger model to the smaller one, knowledge distillation can reduce the memory footprint and speed up the inference time of the smaller model.
+											</li>
+											<li>
+												Winograd convolution: Winograd convolution is a technique for accelerating the computation of convolutional layers in a neural network. By transforming the convolution operation into a series of smaller matrix multiplications, Winograd convolution can reduce the number of arithmetic operations required to compute a convolution, speeding up the inference time of a model.
+											</li>
+											<li>
+												Tensor decomposition: Tensor decomposition is a technique for decomposing the weight tensor of a neural network into a set of smaller tensors. By reducing the rank of the weight tensor, tensor decomposition can significantly reduce the memory footprint and speed up the inference time of a model.
+											</li>
+											<li>
+												Low-rank approximation: Low-rank approximation is a technique for approximating the weight matrix of a convolutional layer using a smaller, low-rank matrix. This can reduce the number of parameters in the model and speed up inference time.
+											</li>
+											<li>
+												Depthwise separable convolution: Depthwise separable convolution is a type of convolutional layer that separates the spatial and channel-wise convolution operations. This can significantly reduce the computational cost of a convolutional layer.
+											</li>
+											<li>
+												Group convolution: Group convolution is a technique for splitting the input channels into groups and performing separate convolutions on each group. This can reduce the computational cost of a convolutional layer by reducing the number of parameters.
+											</li>
+											<li>
+												Dynamic inference: Dynamic inference is a technique for adapting the computation of a model based on the input data. This can reduce the computational cost of a model by skipping unnecessary computations.
+											</li>
+											<li>
+												Sparsity: Sparsity is a technique for inducing sparsity in the weight matrix of a model by setting some weights to zero. This can reduce the number of parameters in the model and speed up inference time.
+											</li>
+										</ul>
+									</p>
+
+									<p>
+										These are just a few of the many techniques that can be used to accelerate model inference. In practice, a combination of these techniques is often used to achieve the best results. It is important to note that these techniques can also have a trade-off between model size, accuracy, and inference speed. Therefore, it is important to carefully evaluate the impact of each technique on the performance of a specific model and application before making any changes.
+									</p>
+
+
+
+								</article>
+							</section>
+
+					</div>
+
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; plefevre</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
