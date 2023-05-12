@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Tech Garage</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="#" class="logo">Blog</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="techgarage.html">Tech Garage Blog</a></li>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									
+								</header>
+								
+								
+
+								<article>
+									<header>
+										<h2><a href="#">Log Softmax and numerical instabilities</a></h2>
+									</header>
+
+									<p>
+										The log softmax function is a mathematical operation used in deep learning to convert an output vector into a probability distribution. The softmax function is commonly used for this purpose, but it can sometimes result in numerical instabilities when dealing with large or small values. The log softmax function is a modification of the softmax function that addresses these issues.
+									</p>
+
+									<p>
+										The softmax function takes an input vector and returns a probability distribution over the same vector's values. However, the exponential function used in the softmax can cause numerical overflow or underflow when dealing with large or small values in the input vector. This can lead to incorrect or unstable calculations, which can negatively impact the performance of deep learning models.
+									</p>
+
+									<p>
+										The log softmax function solves this problem by taking the logarithm of the softmax function's output. The logarithm operation compresses the range of values and makes it more stable, allowing for more accurate and efficient computations. The log softmax function can be defined as follows: 
+									</p>
+									
+									<p>
+										\(log\ softmax\ x_i\ = log\left(\frac{e^{x_i - c}}{\sum\limits_{j} e^{x_j - c}}\right), c = \max x_i\)
+									</p>
+
+									<p>
+										where \(x\) is the input vector and i and j are indices over the same vector. The denominator of the fraction is the sum of all the exponential values in the input vector, ensuring that the output is a probability distribution.
+									</p>
+
+									<p>
+										The log softmax function is commonly used in deep learning for computing probability distributions in loss functions such as cross-entropy loss and negative log-likelihood loss. These loss functions require a probability distribution as input, and the log softmax function provides a stable and accurate way to compute this distribution.
+									</p>
+
+									<p>
+										Overall, the log softmax function is a modification of the softmax function that solves numerical instabilities when dealing with large or small values in the input vector. It is an important tool in deep learning for computing probability distributions and is commonly used in loss functions. By providing a stable and accurate way to compute probability distributions, the log softmax function helps improve the performance and reliability of deep learning models.
+									</p>
+
+								</article>
+							</section>
+
+					</div>
+
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; plefevre</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
